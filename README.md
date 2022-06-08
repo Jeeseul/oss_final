@@ -10,7 +10,7 @@ before taking Capstone Design classes, and check design credit that they would t
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/61488698/172678903-c5e786b6-58fa-465a-af80-5e2d85b8ce40.png">
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/61488698/172679105-35a8527a-42e0-4133-90b4-e6a2963a89d4.png">
 
-
+I used HTML, jquery, javascript, css, google font, etc. for this project.
 
 ### Why is this project useful?
 
