@@ -31,4 +31,4 @@ Any questions are welcome.
 
 ### Presentation Video (YouTube) Link
 ### contribution to this project 
-I took the skeleton and structure of this webpage from w3school. <br>However, I implemented all the detailed functions such as internal content creation,<br> flow configuration, and exception handling. <br>Also, the color, image, and design were modified and reconstructed.
+I took the skeleton and structure of this webpage from [w3school](https://www.w3schools.com/w3css/w3css_templates.asp). <br>However, I implemented all the detailed functions such as internal content creation,<br> flow configuration, and exception handling. <br>Also, the color, image, and design were modified and reconstructed.
