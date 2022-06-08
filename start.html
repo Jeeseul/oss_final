@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/f524de0eb2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        /* body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif} */
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        *{
+            font-family: 'Poor Story', cursive !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-light-blue"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Main</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-blue-grey w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">설계학점 확인하기</h1>
+        <p class="w3-xlarge">Let's Start to Check!!</p>
+        <a href="./form.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get
+                Started</button></a>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content"  style="display: flex;align-items: center;">
+            <div class="w3-twothird">
+                <h1>이 체크하는 과정이 중요한 이유!</h1>
+                <h5 class="w3-padding-32">전산전자공학부 학생들중, 컴퓨터공학 심화 및 전자공학심화 학생들은 <span
+                        style="font-weight: bold;">'설계학점'</span>이라는 것을 <br><span style="text-decoration: underline;">캡스톤
+                        수강과 동시에</span> <span style="font-weight: bold;">12학점</span>을 모두 채워야만 졸업할 수 있습니다! <br>이러한 점에서 보았을
+                    때, 자신이 어느 지점까지 왔는지 확인하는 과정은 언제가 중요하니까,<br>각자 얼마나 남았는지 알아야겠죠?</h5>
+                
+            </div>
+
+            <div class="w3-third w3-center">
+                <!-- <i class="fa-solid fa-anchor w3-padding-64 w3-text-lime"></i> -->
+                <img style="width: 80%;" src="https://cdn.pixabay.com/photo/2016/03/19/04/40/cap-1266204_1280.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content" style="display: flex;align-items: center;">
+            <div class="w3-third w3-center">
+                <img src="https://cdn.pixabay.com/photo/2014/11/18/20/27/elections-536656_1280.png" style="width: 80%;">
+                <!-- <i class="fa fa-coffee w3-padding-64 w3-text-khaki w3-margin-right"></i> -->
+            </div>
+
+            <div class="w3-twothird">
+                <h1>설계과목 리스트</h1>
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <h5>
+                            <컴퓨터 공학 심화 학생 수강 가능 수업>
+                        </h5>
+                        <p>공학설계입문<br>
+                            실전프로젝트1<br>
+                            웹서비스개발<br>
+                            디지털시스템설계<br>
+                            모바일앱개발<br>
+                            AI프로젝트입문<br>
+                            객체지향설계패턴<br>
+                            임베디드프로세서응용<br>
+                            IOT 시스템 설계<br>
+                            공학프로젝트기획<br>
+                            캡스톤디자인</p>
+                    </div>
+                    <div>
+                        <h5>
+                            <전자 공학 심화 학생 수강 가능 수업>
+                        </h5>
+                        <p>공학설계입문<br>
+                            실전프로젝트1<br>
+                            디지털시스템설계<br>
+                            임베디드프로세서응용<br>
+                            IOT 시스템 설계<br>
+                            공학프로젝트기획<br>
+                            캡스톤디자인</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <p class="w3-margin w3-medium">이 페이지는 22년도 1학기 수강편람을 참고하여 만들었습니다.<br> 규정이 바뀔 수도, 실수가 있을 수도 있으니 이상한 점은
+            jeeseul565@handong.ac.kr로 문의주시거나 더블체크해보시기 바랍니다:)</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <p>Filled by Olaf_JS</p>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

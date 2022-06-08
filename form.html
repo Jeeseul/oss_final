@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>설계학점 체크</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poor+Story&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h3 {
+      font-family: 'Poor Story', cursive !important;
+    }
+
+    body,
+    html {
+      height: 100%;
+      font-family: 'Poor Story', cursive;
+    }
+
+    .bgimg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .cs {
+      display: none;
+    }
+
+    .ee {
+      display: none;
+    }
+
+    .back {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+
+    .button {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+      /* padding: 15px 32px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .button:hover {
+      box-sizing: border-box;
+      padding: 7px 12px;
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid gray;
+      /* padding: 15px 32px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .button2:hover {
+      box-sizing: border-box;
+      padding: 7px 12px;
+      background-color: gray;
+      /* Green */
+      border: none;
+      color: white;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+    }
+    .result{
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      Olaf_JS
+    </div>
+    <div class="w3-display-middle">
+      <h3 class="w3-jumbo w3-animate-top">설계학점 확인하기</h3>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <div class="content back">
+        <p class="w3-large w3-center">자신이 들었거나 듣고 있는 과목에 모두 체크해주세요!</p>
+
+        <form>
+          <label for="major">학과를 선택해주세요:</label>
+          <select id="major" name="major" style="height: 30px;">
+            <option value="default">---선택해주세요---</option>
+            <option value="cs">AI컴퓨터공학심화</option>
+            <option value="ee">전자공학심화</option>
+          </select>
+          <br><br>
+          <div class="cs">
+            <input type="checkbox" id="engineeringDesign" name="csCheck[]" class="csCheck" value="공학설계입문">
+            <label for="engineeringDesign">공학설계입문(3)</label><br>
+            <input type="checkbox" id="realProject" name="csCheck[]" class="csCheck" value="실전프로젝트1">
+            <label for="realProject">실전프로젝트1(1)</label><br>
+            <input type="checkbox" id="webServiceDev" name="csCheck[]" class="csCheck" value="웹서비스개발">
+            <label for="webServiceDev">웹서비스개발(1)</label><br>
+            <input type="checkbox" id="digitalSysDesign" name="csCheck[]" class="csCheck" value="디지털시스템설계">
+            <label for="digitalSysDesign">디지털시스템설계(1)</label><br>
+            <input type="checkbox" id="mobileAppDev" name="csCheck[]" class="csCheck" value="모바일앱개발">
+            <label for="mobileAppDev">모바일앱개발(1)</label><br>
+            <input type="checkbox" id="AIproject" name="csCheck[]" class="csCheck" value="AI프로젝트입문">
+            <label for="AIproject">AI프로젝트입문(1)</label><br>
+            <input type="checkbox" id="embeded" name="csCheck[]" class="csCheck" value="임베디드프로세서응용">
+            <label for="embeded">임베디드프로세서응용(1)</label><br>
+            <input type="checkbox" id="IOT" name="csCheck[]" class="csCheck" value="IOT 시스템 설계">
+            <label for="IOT">IOT 시스템 설계(1)</label><br>
+            <input type="checkbox" id="gongpgi" name="csCheck[]" class="csCheck" value="공학프로젝트기획">
+            <label for="gongpgi">공학프로젝트기획(2)</label><br>
+            <input type="checkbox" id="capstone" name="csCheck[]" class="csCheck" value="캡스톤디자인">
+            <label for="capstone">캡스톤디자인(4)</label><br>
+          </div>
+          <div class="ee">
+            <input type="checkbox" id="engineeringDesign2" name="eeCheck[]" class="eeCheck" value="공학설계입문">
+            <label for="engineeringDesign2">공학설계입문(3)</label><br>
+            <input type="checkbox" id="realProject2" name="eeCheck[]" class="eeCheck" value="실전프로젝트1">
+            <label for="realProject2">실전프로젝트1(1)</label><br>
+            <input type="checkbox" id="digitalSysDesign2" name="eeCheck[]" class="eeCheck" value="디지털시스템설계">
+            <label for="digitalSysDesign2">디지털시스템설계(1)</label><br>
+            <input type="checkbox" id="embeded2" name="eeCheck[]" class="eeCheck" value="임베디드프로세서응용">
+            <label for="embeded2">임베디드프로세서응용(1)</label><br>
+            <input type="checkbox" id="IOT2" name="eeCheck[]" class="eeCheck" value="IOT 시스템 설계">
+            <label for="IOT2">IOT 시스템 설계(1)</label><br>
+            <input type="checkbox" id="gongpgi2" name="eeCheck[]" class="eeCheck" value="공학프로젝트기획">
+            <label for="gongpgi2">공학프로젝트기획(2)</label><br>
+            <input type="checkbox" id="capstone2" name="eeCheck[]" class="eeCheck" value="캡스톤디자인">
+            <label for="capstone2">캡스톤디자인(4)</label><br>
+          </div><br>
+          <!-- <button class="button" type="submit">확인하기</button> -->
+        </form>
+      </div>
+      <div class="buttons">
+        <button class="button">확인하기</button>
+        <button class="button2">다시 체크하기</button>
+      </div>
+
+      <script>
+        // jQuery('#major').change(function () {
+        //   var state = jQuery('#major option:selected').val();
+        //   if (state == 'cs') {
+        //     jQuery('.ee').hide();
+        //     jQuery('.cs').show();
+        //   } else if (state == 'ee') {
+        //     jQuery('.cs').hide();
+        //     jQuery('.ee').show();
+        //   } else {
+        //     jQuery('.cs').hide();
+        //     jQuery('.ee').hide();
+        //   }
+        // });
+
+        $(document).ready(function () {
+
+          $('#major').change(function () {
+          var state = jQuery('#major option:selected').val();
+          if (state == 'cs') {
+            jQuery('.ee').hide();
+            jQuery('.cs').show();
+          } else if (state == 'ee') {
+            jQuery('.cs').hide();
+            jQuery('.ee').show();
+          } else {
+            jQuery('.cs').hide();
+            jQuery('.ee').hide();
+          }
+        });
+
+          var gotGrade=0;
+          var checkedClass=[];
+          var classInfo={"공학설계입문":3,"실전프로젝트1":1,"웹서비스개발":1,"디지털시스템설계":1,"모바일앱개발":1,"AI프로젝트입문":1,"객체지향설계패턴":1,"임베디드프로세서응용":1,"IOT 시스템 설계":1,"공학프로젝트기획":2,"캡스톤디자인":4};
+          $(".button").click(function () {
+            if($('.content').is(':visible')==true){
+            //alert($('input:checkbox[name="csCheck[]"]:checked').length+"/"+$('input:checkbox[name="eeCheck[]"]:checked').length);
+            if ($('input:checkbox[name="csCheck[]"]:checked').length == 0 && $('input:checkbox[name="eeCheck[]"]:checked').length == 0) {
+              alert("현재까지 들은 과목들을 무조건 선택해주셔야합니다:)");
+            } else {
+              $(".content").hide();
+              console.log($("#major option:selected").val());
+              if ($("#major option:selected").val() == "cs") {
+                let chekObj = document.getElementsByClassName("csCheck");
+                let lenth = chekObj.length;
+                let checkboxTest;
+                for (i = 0; i < lenth; i++) {
+                  if (chekObj[i].checked === true) {
+                    checkboxTest = chekObj[i].getAttribute("value");
+                    //console.log(checkboxTest);
+                    checkedClass.push(checkboxTest);
+                    gotGrade += classInfo[checkboxTest];
+                  }
+                }
+                console.log(checkedClass);
+
+              } else if ($("#major option:selected").val() == "ee") {
+                let chekObj = document.getElementsByClassName("eeCheck");
+                let lenth = chekObj.length;
+                let checkboxTest;
+                for (i = 0; i < lenth; i++) {
+                  if (chekObj[i].checked === true) {
+                    checkboxTest = chekObj[i].getAttribute("value");
+                    //console.log(checkboxTest);
+                    checkedClass.push(checkboxTest);
+                    gotGrade += classInfo[checkboxTest];
+                  }
+                }
+                console.log(checkedClass);
+              }
+              $(".grade").html(gotGrade);
+              $(".leftThing").show();
+              if(12 - gotGrade>0){ 
+                $(".leftGrade").html(12 - gotGrade);
+                if(checkedClass.indexOf("공학프로젝트기획")>=0){
+                  
+                  $(".leftThing").html("주의하세요, 캡스톤을 듣는 학기에 12학점이 완성되어야합니다.");
+                }
+                if(checkedClass.indexOf("캡스톤디자인")>=0){
+                  $(".leftThing").html("캡스톤을 듣는데, 12학점이 안된다구요? 얼른 방법을 찾아보세요, 졸업을 못하실 수도...?");
+                }
+              }
+              else $(".leftThing").html("12학점을 넘으셨네요! 마음 편하게 다른 졸업 조건을 살펴봐요:)");
+              $(".result").show();
+            }
+          }else{
+            alert("확인하기는 두번 누를 수 없어요");
+          }
+          });
+
+          $(".button2").click(function () {
+            $(".content").show();
+            checkedClass.splice(0,checkedClass.length);
+            console.log(checkedClass);
+            gotGrade = 0;
+            $(".leftThing").hide();
+          });
+
+
+        });
+      </script>
+      <div class="result">
+        <p class="w3-medium w3-center">지금까지 <span class="grade"></span> 학점 들으셨어요😊</p>
+        <p class="w3-large w3-center leftThing">앞으로 <span class="leftGrade"></span> 학점이 남았어요;)</p>
+      </div>
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    </div>
+  </div>
+</body>
+
+</html>
