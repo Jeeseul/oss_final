@@ -30,5 +30,7 @@ If you need any help, feel free to email jeeseul565@handong.ac.kr :) <br>
 Any questions are welcome.
 
 ### Presentation Video (YouTube) Link
+https://youtu.be/HxCfwqr_mDk
+
 ### contribution to this project 
 I took the skeleton and structure of this webpage from [w3school](https://www.w3schools.com/w3css/w3css_templates.asp). <br>However, I implemented all the detailed functions such as internal content creation,<br> flow configuration, and exception handling using jquery. <br>Also, the color, image, and design were modified and reconstructed.
